@@ -3,6 +3,7 @@ class Network {
     constructor(data, next = null) {
         this.layers = 0;
         this.head = null;
+        this.available_datatype = ['.csv', '.tsv'];
     }
     
     push(neuron) {
@@ -23,6 +24,14 @@ class Network {
 
     info() {
         console.log("layers:" + this.layers);
+    }
+
+    train() {
+        console.log(this.inputs);
+    }
+    charge(path) {
+        const data = clean_data(path);
+        console.log("charging");
     }
 }
 
