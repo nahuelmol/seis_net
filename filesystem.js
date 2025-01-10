@@ -14,9 +14,9 @@ function take_type(path) {
 
 
 function clean_data (path) {
-    available_datatype = ['.csv', '.tsv']; 
+    const available_datatype = ['.csv', '.tsv']; 
     let filetype = take_type(path);
-    if available_datatype.includes(filetype) {
+    if (available_datatype.includes(filetype) != 0) {
         console.log('available datatype');
     } else {
         throw new UnavailableData();
