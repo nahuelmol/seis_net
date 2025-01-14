@@ -12,7 +12,20 @@ fetch(path)
 
 
 function delete_header(raw_data) {
-    return data;
+    //I must rewrite the file
+    let len = raw_data.length;
+    let pos = 0;
+    for(let i = 0;i<len; i++){
+        pos++;
+        if(i == '\n') {
+            count_row++;
+        } 
+        if(count_row == 10) {
+            break;
+        }
+    }
+    let newfile = str.slice(pos, len);
+    return newfile;
 }
 function makin_dataset(data) {
     let places = [];
