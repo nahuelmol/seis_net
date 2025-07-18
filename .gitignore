@@ -1,0 +1,12 @@
+
+<<<<<<< HEAD
+node_modules
+=======
+>>>>>>> a9123dc922b34b5e1523139110587057732fcfd1
+*.swp
+*.un~
+*.exe
+*.cpp~
+*.bat~
+*.html~
+*.js~
